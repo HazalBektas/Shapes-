@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 /**
- *
  * FIRST, COMPLETE Shape interface
  * THEN, COMPLETE Rectangle, Square, and Circle classes
  * LASTLY, COMPLETE TestShapes class
@@ -9,7 +8,6 @@ import java.util.ArrayList;
 
 public class TestShapes {
     public static void main(String[] args) {
-
         /*
         This will be our actual program that we request some information from user to create 3 objects
         We will create 1 Rectangle, 1 Square and 1 Circle object
@@ -40,6 +38,26 @@ public class TestShapes {
 
          Circle has the largest area as 50.24
          */
+
+
+        Rectangle rectangle = new Rectangle(6.6, 8);
+        Square square = new Square(3.5);
+        Circle circle = new Circle(5.0);
+
+        System.out.println(circle);
+        System.out.println("Area of the Circle is = " + circle.area(5.0));
+        System.out.println("Perimeter of the Circle is = " + circle.perimeter(5.0));
+
+        System.out.println("-------------------------");
+
+        System.out.println(rectangle);
+        System.out.println("Area of rectangle is = " + rectangle.area(7.5));
+        System.out.println("Perimeter of rectangle is = " + rectangle.perimeter(34));
+
+        System.out.println("-------------------------");
+        System.out.println(square);
+        System.out.println("Area of square is = " + square.area(8.45));
+        System.out.println("Perimeter of square is = " + square.perimeter(5.25));
 
 
     }
